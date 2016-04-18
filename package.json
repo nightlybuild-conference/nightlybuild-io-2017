@@ -5,7 +5,9 @@
   "main": "index.js",
   "devDependencies": {
     "browserify": "^13.0.0",
-    "nodemon": "^1.9.1"
+    "node-sass": "^3.4.2",
+    "nodemon": "^1.9.1",
+    "onchange": "^2.4.0"
   },
   "dependencies": {
     "body-parser": "^1.14.1",
@@ -16,6 +18,10 @@
   "scripts": {
     "dev": "npm run watch:nodejs",
     "watch:nodejs": "nodemon index.js",
+    "scss": "./node_modules/node-sass/bin/node-sass --output-style compressed scss/main.scss public/css/main.css",
+    "javascript": "mkdir public/js && uglifyjs js/main.js -c -m -o public/js/main.min.js --source-map=\"public/js/main.min.js.map\"",
+    "watch:scss": "onchange '**/*.scss' -- npm run scss",
+    "watch:javascript": "onchange 'js/**/*.js' -- npm run javascript",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
