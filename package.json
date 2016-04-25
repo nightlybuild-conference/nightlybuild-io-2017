@@ -13,13 +13,15 @@
     "body-parser": "^1.14.1",
     "ect": "^0.5.9",
     "express": "^4.13.3",
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "uglifyjs": "^2.4.10"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "./node_modules/node-sass/bin/node-sass --output-style compressed scss/main.scss public/css/main.css",
-    "js": "mkdir public/js && uglifyjs js/main.js -c -m -o public/js/main.min.js --source-map=\"public/js/main.min.js.map\"",
-    "watch": "npm run watch:nodejs & npm run watch:scss & npm run watch:js",
+    "js": "mkdir -p public/js && uglifyjs js/main.js -c -m -o public/js/main.js --source-map=\"public/js/main.js.map\"",
+    "build": "npm run scss && npm run js",
+    "serve": "npm run build && npm run watch:nodejs & npm run watch:scss & npm run watch:js",
     "watch:nodejs": "nodemon index.js",
     "watch:scss": "onchange '**/*.scss' -- npm run scss",
     "watch:js": "onchange 'js/**/*.js' -- npm run js"
