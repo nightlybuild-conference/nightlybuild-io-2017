@@ -19,7 +19,24 @@ html {
 }
 
 body {
-    padding: 3em 2vw 3em 2vw;
+    padding: 10em 2vw 3em 2vw;
+}
+
+// Helper classes
+.hidden {
+    display: none;
+}
+
+.special-color {
+    color: #7DCFB6;
+}
+
+// Navigation
+
+.logo {
+    display: inline-block;
+    position: relative;
+    z-index: 99999;
 }
 
 .navigation {
@@ -32,6 +49,10 @@ body {
     text-align: center;
     background-color: #e5dadc;
     color: #263238;
+
+    @media (max-width: 35em) {
+        position: static;
+    }
 
     ul {
         list-style: none;
@@ -47,15 +68,42 @@ body {
     a,
     a:visited,
     a:active {
+        display: inline-block;
         padding: 0.25em;
         color: #263238;
         text-decoration: none;
+    }
+
+    @media (max-width: 35em) {
+        a {
+            padding: 0.5em;
+            margin: 0.5em;
+        }
     }
 
     a:hover,
     a:focus {
         color: #263238;
         text-decoration: underline;
+    }
+
+    .logo {
+        height: 7.5em;
+        width: 7.5em;
+        transition: 125ms all ease-in-out;
+        will-change: auto;
+
+        &.is-small {
+            position: absolute;
+            left: 2vw;
+            height: 4em;
+            width: 4em;
+        }
+
+        &.is-large {
+            height: 7.5em;
+            width: 7.5em;
+        }
     }
 }
 
@@ -82,9 +130,7 @@ a:focus {
 
 h2 {
     font-size: 6vw;
-    letter-spacing: -0.075em;
-    position: relative;
-    left: calc(-2vw - 0.25ch);
+    letter-spacing: -0.05em;
     font-weight: bold;
 
     &:after {
@@ -99,8 +145,14 @@ h2 {
     margin: 5em auto 1em;
 }
 
+@media (max-width: 35em) {
+    .header {
+        margin-top: 0;
+    }
+}
+
 .header h1 {
-    font-size: 8vw;
+    font-size: 7.5vw;
     margin: 0;
 }
 
@@ -109,13 +161,19 @@ h2 {
     font-size: 2vw;
 }
 
-.rotate-left {
-    position: absolute;
-    right: 2vw;
-    top: 8rem;
-    max-width: 40vh;
-    transform: rotate(-90deg);
-    transform-origin: center center;
+@media (min-width: 42em) {
+    .rotate-left {
+        position: absolute;
+        right: 2vw;
+        top: 8em;
+        max-width: 40vh;
+        transform: rotate(-90deg);
+        transform-origin: center center;
+    }
+}
+
+.main {
+    min-height: 35em;
 }
 
 .text-image-overlay {
@@ -247,3 +305,147 @@ h2 {
     padding-left: 10%;
 }
 
+.theme-owl {
+    display: none;
+}
+
+@media (min-width: 80em) {
+    .theme {
+        position: relative;
+    }
+
+    .theme-owl {
+        position: absolute;
+        right: -25em;
+        top: -8em;
+        width: 20em;
+        height: 20em;
+        margin: 0;
+        display: inline-block;
+        opacity: 0.125;
+    }
+}
+
+.ticket {
+    margin: 0;
+    max-width: 45em;
+    min-height: 28em;
+    box-sizing: padding-box;
+    padding: 2em 2em 2em 2em;
+}
+
+@media (min-width: 35em) {
+    .ticket {
+        padding-right: 10em;
+        background: url('/img/ticket.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 42em) {
+    .ticket {
+        padding-right: 18em;
+    }
+}
+
+.ticket a {
+    display: inline-block;
+    margin: 2em 0;
+    padding: 0.75em 1em;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #7DCFB6;
+    color: #263238;
+    transition: all 125ms ease-in-out;
+}
+
+.ticket h3 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.ticket h3 .normal {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.ticket h3,
+.ticket strong {
+    color: #fff;
+}
+
+.ticket a:hover {
+    background-color: #fff;
+}
+
+// Team Small
+.team--small li :not(:last-of-type)::after {
+    content: ',';
+}
+
+// Footer
+.footer {
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    display: inline-block;
+}
+
+// Footer navigation
+.footer-nav li {
+    display: inline-block;
+}
+
+.footer-nav li a {
+    margin: 0.5em;
+    padding: 0.25em;
+}
+
+// Small screen stuff
+
+@media (max-width: 35em) {
+    body {
+        padding-top: 0;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header h3 {
+        font-size: 1.25rem;
+    }
+
+    .header h1 + p,
+    .header p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .theme {
+        text-align: left;
+    }
+
+    .theme p {
+        font-size: 1rem;
+        padding-left: 0;
+    }
+
+    .theme blockquote {
+        font-size: 1.5rem;
+    }
+
+    .ticket {
+        padding: 1em;
+    }
+}
