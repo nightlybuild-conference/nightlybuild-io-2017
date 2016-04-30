@@ -22,6 +22,11 @@ body {
     padding: 10em 2vw 3em 2vw;
 }
 
+// Layout helpers
+.layout-section {
+    padding-top: 2vw;
+}
+
 // Helper classes
 .hidden {
     display: none;
@@ -88,16 +93,16 @@ body {
     }
 
     .logo {
-        height: 7.5em;
-        width: 7.5em;
+        height: 7em;
+        width: 7em;
         transition: 125ms all ease-in-out;
         will-change: auto;
 
         &.is-small {
             position: absolute;
             left: 2vw;
-            height: 4em;
-            width: 4em;
+            height: 3.25em;
+            width: 3.25em;
         }
 
         &.is-large {
@@ -141,7 +146,7 @@ h2 {
 .header {
     width: 96vw;
     max-width: 100%;
-    min-height: 25em;
+    min-height: 22em;
     margin: 5em auto 1em;
 }
 
@@ -165,10 +170,22 @@ h2 {
     .rotate-left {
         position: absolute;
         right: 2vw;
-        top: 8em;
+        top: 24em;
         max-width: 40vh;
         transform: rotate(-90deg);
         transform-origin: center center;
+    }
+}
+
+@media (min-width: 52em) {
+    .rotate-left {
+        top: 18em;
+    }
+}
+
+@media (min-width: 70em) {
+    .rotate-left {
+        top: 10em;
     }
 }
 
@@ -401,6 +418,7 @@ h2 {
 // Footer navigation
 .footer-nav li {
     display: inline-block;
+    margin-bottom: 1rem;
 }
 
 .footer-nav li a {
