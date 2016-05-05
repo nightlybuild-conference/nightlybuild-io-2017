@@ -17,7 +17,6 @@
     "uglifyjs": "^2.4.10"
   },
   "scripts": {
-    "start": "npm run build && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "./node_modules/node-sass/bin/node-sass --output-style compressed scss/main.scss public/css/main.css",
     "js": "uglifyjs js/main.js -c -m -o public/js/main.js --source-map=\"public/js/main.js.map\"",
