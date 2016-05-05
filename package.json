@@ -1,7 +1,7 @@
 {
   "name": "nightlybuild-io-2016",
   "version": "0.1.0",
-  "description": "Homepage of the Nightlybuild conference 2016",
+  "description": "website of the Nightlybuild Conference 2016",
   "main": "index.js",
   "devDependencies": {
     "browserify": "^13.0.0",
