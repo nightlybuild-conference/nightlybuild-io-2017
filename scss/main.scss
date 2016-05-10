@@ -42,6 +42,17 @@ body {
     display: inline-block;
     position: relative;
     z-index: 99999;
+    height: 7em;
+    width: 7em;
+    transition: 125ms all ease-in-out;
+    will-change: auto;
+
+    &.is-small {
+        position: absolute;
+        left: 2vw;
+        height: 3.25em;
+        width: 3.25em;
+    }
 }
 
 .navigation {
@@ -90,25 +101,6 @@ body {
     a:focus {
         color: #263238;
         text-decoration: underline;
-    }
-
-    .logo {
-        height: 7em;
-        width: 7em;
-        transition: 125ms all ease-in-out;
-        will-change: auto;
-
-        &.is-small {
-            position: absolute;
-            left: 2vw;
-            height: 3.25em;
-            width: 3.25em;
-        }
-
-        &.is-large {
-            height: 7.5em;
-            width: 7.5em;
-        }
     }
 }
 
