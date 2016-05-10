@@ -20,7 +20,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "./node_modules/node-sass/bin/node-sass --output-style compressed scss/main.scss public/css/main.css",
     "js": "uglifyjs js/main.js -c -m -o public/js/main.js --source-map public/js/main.js.map --source-map-url /js/main.js.map",
-    "images": "cp -R img/ public/img",
+    "images": "cp -R img/* public/img/",
     "mkdirp": "mkdir -p public/js public/img public/css",
     "build": "npm run mkdirp && npm run images && npm run scss && npm run js",
     "serve": "npm run mkdirp && npm run images && npm run build && npm run watch:nodejs & npm run watch:scss & npm run watch:js",
