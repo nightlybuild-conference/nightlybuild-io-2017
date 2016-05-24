@@ -7,8 +7,15 @@
             <nav class="navigation" role="navigation">
                 <a href="/" title="Nightlybuild.io"><img class="logo" src="/img/logo-2016.svg" alt="Nightlybuild"></a>
                 <ul>
-                    <li><a href="/#central-theme">Central Theme</a></li>
-                    <li><a href="/#tickets">Buy Tickets</a></li>
+                    <li>
+                        <a href="/#central-theme">Central Theme</a>
+                    </li>
+                    <li <% if @page == 'speaker' : %>class="is-active"<% end %>>
+                        <a href="/speaker">Speaker</a>
+                    </li>
+                    <li>
+                        <a href="/#tickets">Buy Tickets</a>
+                    </li>
                 </ul>
             </nav>
 

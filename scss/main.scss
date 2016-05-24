@@ -97,6 +97,7 @@ body {
         }
     }
 
+    li.is-active a,
     a:hover,
     a:focus {
         color: #263238;
@@ -123,6 +124,16 @@ a:active {
 a:hover,
 a:focus {
     color: #e5dadc; // @TODO find better
+}
+
+a.button {
+    display: inline-block;
+    padding: 0.75em 1em;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #7DCFB6;
+    color: #263238;
+    transition: all 125ms ease-in-out;
 }
 
 h2 {
@@ -211,7 +222,7 @@ h2 {
 
         p {
             max-width: 100%;
-            padding-left: 30%;
+            padding-left: 40%;
         }
     }
 }
@@ -296,26 +307,48 @@ h2 {
 }
 
 .theme {
+    margin-bottom: 3rem;
     width: 60em;
     max-width: 100%;
     text-align: right;
-}
 
-.theme blockquote {
-    font-family: Georgia, serif;
-    font-size: 2.8em;
-    line-height: 1.1;
-    margin: 0;
-}
+    blockquote {
+        font-family: Georgia, serif;
+        font-size: 2.8em;
+        line-height: 1.1;
+        margin: 0;
+    }
 
-.theme p {
-    font-size: 1.2em;
-    line-height: 1.4;
-    padding-left: 10%;
-}
+    h3 {
+        font-size: 1.5em;
+        margin-bottom: 0.5rem;
+    }
 
-.theme-owl {
-    display: none;
+    p {
+        font-size: 1.2em;
+        line-height: 1.4;
+        padding-left: 10%;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
+    ul p {
+        margin-bottom: 1rem;
+    }
+
+    &-owl {
+        display: none;
+    }
+
+    &--left {
+        text-align: left;
+
+        p {
+            padding-left: 0;
+            padding-right: 10%;
+        }
+
+    }
 }
 
 @media (min-width: 80em) {
@@ -358,15 +391,8 @@ h2 {
     }
 }
 
-.ticket a {
-    display: inline-block;
+.ticket .button {
     margin: 2em 0;
-    padding: 0.75em 1em;
-    font-weight: bold;
-    text-decoration: none;
-    background-color: #7DCFB6;
-    color: #263238;
-    transition: all 125ms ease-in-out;
 }
 
 .ticket h3 {
