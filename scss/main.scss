@@ -443,6 +443,42 @@ h2 {
     content: ',';
 }
 
+// Partners
+.partners {
+    margin: 3rem 0 8rem;
+
+    h4 {
+        font-size: 2em;
+    }
+}
+
+.partner-list {
+    padding: 0;
+    list-style: none;
+
+    li {
+        max-width: 23%;
+        margin-right: 1%;
+
+        a {
+            display: inline-block;
+            padding: 1em;
+            background-color: #fff;
+
+            img {
+                width: 15rem;
+                height: 10rem;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        p {
+
+        }
+    }
+}
+
 // Footer
 .footer {
     text-align: center;
