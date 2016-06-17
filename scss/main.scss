@@ -347,6 +347,16 @@ h2 {
     }
 }
 
+.text-image-overlay.align-right .links {
+    li:not(:first-child) {
+        margin-right: 0.75em;
+    }
+
+    li:first-child {
+        margin-right: 0;
+    }
+}
+
 .theme {
     margin-bottom: 3rem;
     width: 60em;
