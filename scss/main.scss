@@ -239,10 +239,10 @@ h2 {
 .text-image-overlay.color-inverse h4,
 .text-image-overlay.color-inverse p,
 .text-image-overlay.color-inverse a,
-.text-image-overlay.color-inverse li {
+.text-image-overlay.color-inverse li,
+.text-image-overlay .color-inverse {
     color: #263238;
 }
-
 
 .text-image-overlay:nth-child(2n+1) {
     left: 16vw;
@@ -252,7 +252,7 @@ h2 {
     width: 100%;
     height: 100%;
     max-width: 100%;
-    min-height: 10rem;
+    min-height: 12rem;
     object-fit: cover;
     z-index: 0;
 
@@ -294,6 +294,23 @@ h2 {
         max-width: 45%;
         letter-spacing: 0.05em;
         line-height: 1.8;
+    }
+}
+
+@media (min-width: 35em) {
+    .text-image-overlay.wide h4 {
+        max-width: 60%;
+    }
+
+    .text-image-overlay.wide p {
+        max-width: 40%;
+        font-size: 1em;
+    }
+}
+
+.text-image-overlay.wide h4 {
+    @media (min-width: 35em) {
+        font-size: calc(6vw - 2.5vh);
     }
 }
 
