@@ -13,6 +13,9 @@
                     <li <% if @page == 'speaker' : %>class="is-active"<% end %>>
                         <a href="/speaker">Speaker</a>
                     </li>
+                    <li <% if @page == 'partner' : %>class="is-active"<% end %>>
+                        <a href="/partner">Partner</a>
+                    </li>
                     <li>
                         <a href="/#tickets">Buy Tickets</a>
                     </li>
@@ -28,36 +31,24 @@
 
         <main class="main" role="main">
             <% content %>
-
-            <section id="partners" class="partners">
-                <article class="article">
-                    <h2>Our Partners</h2>
-                    <p>We are very thankful to everyone who helps us with the event &ndash; especially our sponsors supporting us with money so we can keep the admission price that low and cover all our costs.</p>
-
-                    <h4>Gold</h4>
-                    <ul class="partner-list partner--gold">
-                        <li>
-                            <a class="link" href="https://rewe-digital.com/" target="_blank">
-                                <img class="image" src="img/sponsors/rewe-digital-logo.svg">
-                                <p class="text"><strong class="special-color">REWE digital</strong> &mdash; Wir steigern die Lebensqualität unserer Kunden, weil sie bei uns alle Dinge des täglichen Bedarfs bekommen &mdash; einfach, jederzeit und überall.</p>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <h4>Bronze &amp; Coffee Sponsor</h4>
-                    <ul class="partner-list partner--bronze">
-                        <li>
-                            <a class="link" href="https://www.contentful.com/" target="_blank">
-                                <img class="image" src="img/sponsors/contentful-logo.svg">
-                                <p class="text"><strong class="special-color">Contentful</strong> &mdash; Contentful is a content management developer platform with an API at its core.</p>
-                            </a>
-                        </li>
-                    </ul>
-                </article>
-            </section>
         </main>
 
         <footer class="footer" role="complementary">
+            <div class="footer-partner">
+                <h3>Thanks to our fantastic Partners</h3>
+                <ul class="footer-partnerList">
+                    <li>
+                        <a href="/partner#rewe-digital">
+                            <img class="image" src="img/sponsors/rewe-digital-logo.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/partner#contentful">
+                            <img class="image" src="img/sponsors/contentful-logo.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <ul class="footer-nav">
                 <li><a href="/legal">Legal Notice</a></li>
                 <li><a href="/coc">Code Of Conduct</a></li>

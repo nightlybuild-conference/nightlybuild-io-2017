@@ -373,7 +373,8 @@ h2 {
     max-width: 100%;
     text-align: right;
 
-    blockquote {
+    blockquote,
+    .subline {
         font-family: Georgia, serif;
         font-size: 2.8em;
         line-height: 1.1;
@@ -549,6 +550,31 @@ h2 {
 .footer-nav li a {
     margin: 0.5em;
     padding: 0.25em;
+}
+
+.footer-partner {
+    margin: 0 -2vw 2rem;
+    width: calc(100% + 4vw);
+    padding: 2rem 0;
+    background-color: #e5dadc;
+    text-align: center;
+
+    h3,
+    p,
+    a,
+    li {
+        color: #263238;
+    }
+}
+
+.footer-partnerList {
+    li {
+        display: inline-block;
+        width: 13%;
+        margin: 0 1em;
+        vertical-align: middle;
+        min-width: 10rem;
+    }
 }
 
 // Small screen stuff
