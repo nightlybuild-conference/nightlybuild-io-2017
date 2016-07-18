@@ -134,6 +134,10 @@ a.button {
     background-color: #7DCFB6;
     color: #263238;
     transition: all 125ms ease-in-out;
+
+    &[disabled] {
+        background-color: rgba(#f5f5f5, 0.35);
+    }
 }
 
 h2 {
@@ -449,12 +453,13 @@ h2 {
 
 @media (min-width: 42em) {
     .ticket {
-        padding-right: 18em;
+        padding-right: 12em;
     }
 }
 
 .ticket .button {
-    margin: 2em 0;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .ticket h3 {
