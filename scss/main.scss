@@ -509,11 +509,14 @@ h2 {
     }
 }
 
-.partner-list {
+.partner-list,
+.image-list {
     display: flex;
     padding: 0;
     list-style: none;
+}
 
+.partner-list {
     @media (max-width: 35em) {
         display: block;
     }
@@ -542,10 +545,10 @@ h2 {
     .link {
         flex: 1;
         display: block;
+        text-decoration: none;
         padding: 1.5rem;
         background-color: #fff;
         color: #263238;
-        text-decoration: none;
     }
 
     .text {
@@ -555,6 +558,29 @@ h2 {
     .image {
         height: 165px;
         width: 100%;
+    }
+}
+
+.image-list {
+    li {
+        overflow: hidden;
+        display: flex;
+        max-width: 32%;
+        margin-right: 2%;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .link {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .image {
+        max-height: 180px;
     }
 }
 
