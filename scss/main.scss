@@ -27,6 +27,10 @@ body {
     padding-top: 2vw;
 }
 
+.layout-section:last-of-type {
+    margin-bottom: 5em;
+}
+
 // Helper classes
 .hidden {
     display: none;
@@ -479,6 +483,16 @@ h2 {
 
 .ticket a:hover {
     background-color: #fff;
+}
+
+// Location/Map
+.map {
+    max-width: 100%;
+    margin: 2em auto 0;
+
+    @media (max-width: 42em) {
+        height: 10em;
+    }
 }
 
 // Team Small
