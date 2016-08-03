@@ -70,7 +70,7 @@ body {
     background-color: #e5dadc;
     color: #263238;
 
-    @media (max-width: 35em) {
+    @media (max-width: 45em) {
         position: static;
     }
 
@@ -94,7 +94,7 @@ body {
         text-decoration: none;
     }
 
-    @media (max-width: 35em) {
+    @media (max-width: 45em) {
         a {
             padding: 0.5em;
             margin: 0.5em;
@@ -161,7 +161,7 @@ h2 {
     margin: 5em auto 1em;
 }
 
-@media (max-width: 35em) {
+@media (max-width: 45em) {
     .header {
         margin-top: 0;
     }
@@ -220,20 +220,19 @@ h2 {
     width: 80vw;
     max-width: 100%;
 
-    @media (min-width: 35em) {
+    @media (min-width: 45em) {
         height: 40em;
     }
 }
 
 .text-image-overlay.align-right {
     text-align: right;
-    direction: rtl; // TODO: not a good idea a11y-wise
 }
 
 .text-image-overlay.align-right,
 .text-image-overlay.text-right {
     img {
-        @media (max-width: 35em) {
+        @media (max-width: 45em) {
             object-position: top left;
         }
     }
@@ -242,7 +241,7 @@ h2 {
 .text-image-overlay.text-right {
     text-align: right;
 
-    * {
+    h4 {
         width: 100%;
     }
 
@@ -252,7 +251,7 @@ h2 {
 
         p {
             max-width: 100%;
-            @media (min-width: 35em) {
+            @media (min-width: 45em) {
                 padding-left: 40%;
             }
         }
@@ -268,7 +267,7 @@ h2 {
 }
 
 .mobile-contrast.color-inverse {
-    @media (max-width: 35em) {
+    @media (max-width: 45em) {
         h4,
         p,
         a,
@@ -290,7 +289,7 @@ h2 {
     object-fit: cover;
     z-index: 0;
 
-    @media (max-width: 35em) {
+    @media (max-width: 45em) {
         object-position: top right;
         filter: brightness(50%) contrast(60%);
     }
@@ -312,7 +311,7 @@ h2 {
     line-height: 1;
     margin: 0 0 1rem 0;
 
-    @media (min-width: 35em) {
+    @media (min-width: 45em) {
         font-size: 6vw;
         width: 60%;
         margin: 0 0 3rem 0;
@@ -323,7 +322,7 @@ h2 {
     max-width: 100%;
     width: 100%;
 
-    @media (min-width: 35em) {
+    @media (min-width: 45em) {
         font-size: 1.2em;
         max-width: 45%;
         letter-spacing: 0.05em;
@@ -331,9 +330,10 @@ h2 {
     }
 }
 
-@media (min-width: 35em) {
+@media (min-width: 45em) {
     .text-image-overlay.wide h4 {
         max-width: 60%;
+        float: right;
     }
 
     .text-image-overlay.wide p {
@@ -343,8 +343,24 @@ h2 {
 }
 
 .text-image-overlay.wide h4 {
-    @media (min-width: 35em) {
+    @media (min-width: 45em) {
         font-size: calc(6vw - 2.5vh);
+    }
+}
+
+.text-image-overlay.wide.text-right {
+    .content {
+        padding: 0;
+    }
+
+    .content {
+        left: 2em;
+    }
+
+    @media (min-width: 45em) {
+        .content p {
+            padding-left: 60%;
+        }
     }
 }
 
@@ -462,7 +478,7 @@ h2 {
     padding: 2em 2em 2em 2em;
 }
 
-@media (min-width: 35em) {
+@media (min-width: 45em) {
     .ticket {
         padding-right: 10em;
         background: url('/img/ticket.svg');
@@ -533,7 +549,7 @@ h2 {
 }
 
 .partner-list {
-    @media (max-width: 35em) {
+    @media (max-width: 45em) {
         display: block;
     }
 
@@ -550,7 +566,7 @@ h2 {
             max-width: 49%;
         }
 
-        @media (max-width: 35em) {
+        @media (max-width: 45em) {
             display: block;
             max-width: 100%;
             margin-right: 0;
@@ -705,7 +721,7 @@ h2 {
 
 // Small screen stuff
 
-@media (max-width: 35em) {
+@media (max-width: 45em) {
     body {
         padding-top: 0;
     }
