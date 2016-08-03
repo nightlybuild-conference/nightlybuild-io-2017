@@ -214,10 +214,6 @@ h2 {
     }
 }
 
-.cfp.text-image-overlay img {
-    filter: unset;
-}
-
 .text-image-overlay {
     position: relative;
     margin: 2em 0;
@@ -232,6 +228,15 @@ h2 {
 .text-image-overlay.align-right {
     text-align: right;
     direction: rtl; // TODO: not a good idea a11y-wise
+}
+
+.text-image-overlay.align-right,
+.text-image-overlay.text-right {
+    img {
+        @media (max-width: 35em) {
+            object-position: top left;
+        }
+    }
 }
 
 .text-image-overlay.text-right {
@@ -260,6 +265,17 @@ h2 {
 .text-image-overlay.color-inverse li,
 .text-image-overlay .color-inverse {
     color: #263238;
+}
+
+.mobile-contrast.color-inverse {
+    @media (max-width: 35em) {
+        h4,
+        p,
+        a,
+        li {
+            color: #e5dadc;
+        }
+    }
 }
 
 .text-image-overlay:nth-child(2n+1) {
