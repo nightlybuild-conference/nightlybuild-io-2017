@@ -37,6 +37,8 @@
         </main>
 
         <footer class="footer" role="complementary">
+
+            <% if @page != 'partners' : %>
             <div class="footer-partner">
                 <h3>Thanks to our fantastic Partners</h3>
                 <ul class="footer-partnerList">
@@ -62,6 +64,8 @@
                     </li>
                 </ul>
             </div>
+            <% end %>
+
             <div class="footer-organizers" id="organizers">
                 <h3>This event is brought to you by yours truly</h3>
                 <ul>
