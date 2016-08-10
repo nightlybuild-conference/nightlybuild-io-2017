@@ -5,8 +5,10 @@
     <body>
         <header class="header" role="banner">
             <nav class="navigation" role="navigation">
-                <a href="/" title="Nightlybuild.io"><img class="logo" src="/img/logo-2016.svg" alt="Nightlybuild"></a>
-                <ul>
+                <a class="logo-container" href="/" title="Nightlybuild.io">
+                    <img class="logo" src="/img/logo-2016.svg" alt="Nightlybuild">
+                </a>
+                <ul class="navigation-list">
                     <li>
                         <a href="/#central-theme">Central Theme</a>
                     </li>
@@ -23,6 +25,22 @@
                         <a href="/#tickets">Buy Tickets</a>
                     </li>
                 </ul>
+
+                <div class="dropdown archive-dropdown">
+                    <a class="dropdown-handle" href="#" title="Open/Close Archive">
+                        <span class="dropdown-handleIcon"></span>
+                        <span class="dropdown-handleText">2016</span>
+                    </a>
+
+                    <ul class="dropdown-content">
+                        <li class="dropdown-listItem">
+                            <a href="https://2015.nightlybuild.io/">2015</a>
+                        </li>
+                        <li class="dropdown-listItem">
+                            <a href="https://2014.nightlybuild.io/">2014</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
 
             <h1>NightlyBuild <span class="special-color">2016</span>.</h1>

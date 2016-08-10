@@ -51,11 +51,13 @@ body {
     transition: 125ms all ease-in-out;
     will-change: auto;
 
-    &.is-small {
-        position: absolute;
-        left: 2vw;
-        height: 3.25em;
-        width: 3.25em;
+    @media (min-width: 45em) {
+        .is-narrow &{
+            position: absolute;
+            left: 2vw;
+            height: 3.25em;
+            width: 3.25em;
+        }
     }
 }
 
@@ -65,18 +67,26 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    font-weight: bold;
-    text-align: center;
     background-color: #e5dadc;
     color: #263238;
+    text-align: center;
 
     @media (max-width: 45em) {
         position: static;
+        margin-left: -1rem;
+        margin-right: -1rem;
     }
+}
 
-    ul {
-        list-style: none;
-        padding: 0;
+.navigation-list {
+    list-style: none;
+    padding: 0;
+    font-weight: bold;
+
+    @media (max-width: 56em) {
+        .is-narrow & {
+            padding-right: 40px;
+        }
     }
 
     li {
@@ -106,6 +116,106 @@ body {
     a:focus {
         color: #263238;
         text-decoration: underline;
+    }
+}
+
+// Archive
+
+.archive-dropdown {
+    text-align: left;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    z-index: 110;
+    background: #263238;
+    padding: 0.75rem;
+    border-radius: 0 0 3px 3px;
+
+    .is-narrow & {
+        background: #e5dadc;
+        top: 8px;
+    }
+}
+
+.dropdown-handle {
+    position: relative;
+    margin: 0;
+    color: #e5dadc;
+    cursor: pointer;
+    text-decoration: none;
+
+    .is-narrow & {
+        color: #263238;
+    }
+}
+
+.dropdown-handleIcon {
+    position: relative;
+    width: 1em;
+    margin-right: 1.5rem;
+    top: 0.3rem;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 1em;
+        height: 0.1em;
+        background: #e5dadc;
+        box-shadow:
+            0 0.25em 0 0 #e5dadc,
+            0 0.5em 0 0 #e5dadc;
+
+        .is-narrow & {
+            background: #263238;
+            box-shadow:
+                0 0.25em 0 0 #263238,
+                0 0.5em 0 0 #263238;
+        }
+    }
+}
+
+.dropdown-handleText {
+    margin: 0;
+}
+
+.dropdown-content {
+    list-style: none;
+    display: none;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    padding: 0;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(#e5dadc, 0.75);
+
+    .is-opened & {
+        display: block;
+    }
+}
+
+.dropdown-listItem {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+
+    a {
+        color: #e5dadc;
+        text-decoration: none;
+
+        .is-narrow & {
+            color: #263238;
+        }
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+
+        &:before {
+            content: '〉';
+            position: absolute;
+            left: 0.3rem;
+            top: 0.55rem;
+        }
     }
 }
 
@@ -200,7 +310,7 @@ input[type='submit'] {
     font-size: 2vw;
 }
 
-@media (min-width: 42em) {
+@media (min-width: 45em) {
     .rotate-left {
         position: absolute;
         right: 2vw;
