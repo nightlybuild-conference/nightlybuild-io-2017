@@ -1,18 +1,39 @@
 (function () {
     'use strict';
 
+    // Sticky Navigation
     document.addEventListener('scroll', function () {
         var $nav = document.querySelector('.navigation');
-        var $navLogo = $nav.querySelector('.logo');
 
         if (window.scrollY > 120) {
-            $navLogo.classList.add('is-small');
+            $nav.classList.add('is-narrow');
         } else {
-            $navLogo.classList.remove('is-small');
+            $nav.classList.remove('is-narrow');
         }
     });
 
+    // Archiv Dropdown
+    (function() {
+        var $dropdown = document.querySelector('.dropdown');
+        var $dropdownHandle = $dropdown.querySelector('.dropdown-handle');
 
+        var toggleDropdown = function(event) {
+            if (event.keyCode && event.keyCode != 13) {
+                return;
+            }
+
+            event.preventDefault();
+
+            if ($dropdown.classList.contains('is-opened')) {
+                $dropdown.classList.remove('is-opened');
+            } else {
+                $dropdown.classList.add('is-opened');
+            }
+        }
+
+        $dropdownHandle.addEventListener('click', toggleDropdown, false);
+        $dropdownHandle.addEventListener('keydown', toggleDropdown);
+    })();
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // | Google Universal Analytics                                            |
