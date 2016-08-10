@@ -52,7 +52,7 @@ body {
     will-change: auto;
 
     @media (min-width: 45em) {
-        .is-narrow &{
+        .is-narrow & {
             position: absolute;
             left: 2vw;
             height: 3.25em;
@@ -85,7 +85,7 @@ body {
 
     @media (max-width: 56em) {
         .is-narrow & {
-            padding-right: 40px;
+            padding-right: 2.5rem;
         }
     }
 
