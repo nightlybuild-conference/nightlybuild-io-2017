@@ -971,3 +971,28 @@ input[type='submit'] {
         padding: 1em;
     }
 }
+
+.coc-contact {
+    width: 35em;
+    max-width: 100%;
+    margin: 4em auto;
+    border: 0.5em solid #e5dadc;
+    padding: 1em;
+    text-align: center;
+
+    h4,
+    p,
+    a {
+        color: #e5dadc;
+    }
+
+    h4 {
+        font-size: 1.25em;
+        margin: 0.5em 0 0.35em 0;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 2;
+    }
+}
