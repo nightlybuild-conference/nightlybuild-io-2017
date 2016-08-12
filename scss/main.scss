@@ -455,11 +455,16 @@ input[type='submit'] {
     max-width: 100%;
     width: 100%;
 
+
     @media (min-width: 45em) {
         font-size: 1.2em;
-        max-width: 45%;
+        max-width: 75%;
         letter-spacing: 0.05em;
         line-height: 1.8;
+    }
+
+    @media (min-width: 72em) {
+        max-width: 45%;
     }
 }
 
