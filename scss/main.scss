@@ -357,18 +357,21 @@ input[type='submit'] {
         height: 40em;
     }
 
-    .content {
-        time {
-            right: 0;
-            line-height: 3.5;
-            padding: 0.75em 1.5em;
-            background-color: #e5dadc;
-            color: #263238;
+    .speaker-time {
+        right: 0;
+        line-height: 3.5;
+        padding: 0.75em 1.5em;
+        background-color: #e5dadc;
+        color: #263238;
 
-            @media (min-width: 60em) {
-                position: absolute;
-                right: -4.5em;
-                line-height: inherit;
+        @media (min-width: 60em) {
+            position: absolute;
+            right: -4.5em;
+            line-height: inherit;
+
+            &.left {
+                left: -4.5em;
+                right: auto;
             }
         }
     }
@@ -471,9 +474,8 @@ input[type='submit'] {
     max-width: 100%;
     width: 100%;
 
-
     @media (min-width: 45em) {
-        font-size: 1.2em;
+        font-size: 1em;
         max-width: 75%;
         letter-spacing: 0.05em;
         line-height: 1.8;
@@ -997,8 +999,13 @@ input[type='submit'] {
     margin: 1em auto 3em;
     width: 98%;
     max-width: 100%;
+    border-spacing: 5px;
 
     @media (min-width: 45em) {
+        width: 65%;
+    }
+
+    @media (min-width: 64em) {
         width: 45%;
     }
 
@@ -1009,7 +1016,7 @@ input[type='submit'] {
         border-collapse: collapse;
         border-spacing: 0;
         border-left: 0;
-        border-right: 0;
+        border-right: 2px;
         vertical-align: top;
 
         @media (min-width: 45em) {
