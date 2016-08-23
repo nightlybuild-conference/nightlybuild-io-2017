@@ -1022,6 +1022,48 @@ input[type='submit'] {
     }
 }
 
+.coc-contact {
+    width: 35em;
+    max-width: 100%;
+    margin: 4em auto;
+    border: 0.5em solid #e5dadc;
+    padding: 1em;
+    text-align: center;
+
+    h4,
+    p,
+    a {
+        color: #e5dadc;
+    }
+
+    h4 {
+        font-size: 1.25em;
+        margin: 0.5em 0 0.35em 0;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 2;
+    }
+}
+
+.atevent h3 {
+    display: inline-block;
+    font-size: 2em;
+    padding: 0.25em;
+    background-color: #e5dadc;
+    color: #263238;
+}
+
+.atevent hr {
+    border-color: transparent;
+    margin: 5em auto 1em;
+}
+
+.atevent .theme {
+    margin-bottom: 0;
+}
+
 .schedule {
     margin: 1em auto 3em;
     width: 98%;
