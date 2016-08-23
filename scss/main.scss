@@ -996,3 +996,20 @@ input[type='submit'] {
         line-height: 2;
     }
 }
+
+.atevent h3 {
+    display: inline-block;
+    font-size: 2em;
+    padding: 0.25em;
+    background-color: #e5dadc;
+    color: #263238;
+}
+
+.atevent hr {
+    border-color: transparent;
+    margin: 5em auto 1em;
+}
+
+.atevent .theme {
+    margin-bottom: 0;
+}
