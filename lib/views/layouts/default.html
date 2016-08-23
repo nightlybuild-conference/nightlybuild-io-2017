@@ -9,8 +9,8 @@
                     <img class="logo" src="/img/logo-2016.svg" alt="Nightlybuild">
                 </a>
                 <ul class="navigation-list">
-                    <li>
-                        <a href="/#central-theme">Central Theme</a>
+                    <li <% if @page == 'schedule' : %>class="is-active"<% end %>>
+                        <a href="/schedule">Schedule</a>
                     </li>
                     <li <% if @page == 'speakers' : %>class="is-active"<% end %>>
                         <a href="/speakers">Speakers</a>

@@ -356,6 +356,22 @@ input[type='submit'] {
     @media (min-width: 45em) {
         height: 40em;
     }
+
+    .content {
+        time {
+            right: 0;
+            line-height: 3.5;
+            padding: 0.75em 1.5em;
+            background-color: #e5dadc;
+            color: #263238;
+
+            @media (min-width: 60em) {
+                position: absolute;
+                right: -4.5em;
+                line-height: inherit;
+            }
+        }
+    }
 }
 
 .text-image-overlay.align-right {
@@ -434,7 +450,7 @@ input[type='submit'] {
     top: 2em;
     left: 2em;
     bottom: 2em;
-    right: 2em;
+    right: 3em;
 }
 
 .text-image-overlay h4 {
