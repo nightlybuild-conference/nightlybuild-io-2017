@@ -497,6 +497,12 @@ input[type='submit'] {
 
     @media (min-width: 45em) {
         .content p {
+            padding-left: 40%;
+        }
+    }
+
+    @media (min-width: 64em) {
+        .content p {
             padding-left: 60%;
         }
     }
