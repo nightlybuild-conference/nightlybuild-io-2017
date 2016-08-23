@@ -47,7 +47,27 @@
             <p><strong>Cologne, Germany.</strong> <a href="http://www.theaterhaus-koeln.de/
 ">Theaterhaus</a>. <span class="special-color"><strong>September, 2nd</strong> 2016</span>.</p>
 
-            <h3 class="rotate-left">A hand-crafted after work conference for web enthusiasts loving technology, design and inspiration in Cologne, Germany.</h3>
+            <% if @page != 'partners' : %>
+            <aside role="complementary">
+                <div class="top-partners">
+                    <h3>supported by</h3>
+                    <ul class="footer-partnerList">
+                        <li>
+                            <a href="/partner#rewe-digital">
+                                <img class="image" src="img/sponsors/rewe-digital-logo.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/partner#trivago">
+                                <img class="image" src="img/sponsors/trivago-logo.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <% end %>
+
+            <h3 class="slogan">A hand-crafted after work conference for web enthusiasts loving technology, design and inspiration in Cologne, Germany.</h3>
         </header>
 
         <main class="main" role="main">
