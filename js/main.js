@@ -51,21 +51,6 @@
         // Send a page view
         // https://developers.google.com/analytics/devguides/collection/analyticsjs/pages
         ga('send', 'pageview');
-
-        // // Track events
-        // // https://developers.google.com/analytics/devguides/collection/analyticsjs/events
-        // $('body').on('click', '[data-ga-category]', function (e) {
-        //     var $target = $(e.currentTarget);
-        //     var action = $target.attr('data-ga-action') || undefined;     // required
-        //     var category = $target.attr('data-ga-category') || undefined; // required
-        //     var label = $target.attr('data-ga-label') || undefined;
-        //     var value = parseInt($target.attr('data-ga-value'), 10) || undefined;
-
-        //     // Register the event
-        //     if (ga && category && action) {
-        //         ga('send', 'event', category, action, label, value, {});
-        //     }
-        // });
     }());
 
 }());
