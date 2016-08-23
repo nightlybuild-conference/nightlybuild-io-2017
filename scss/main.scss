@@ -889,6 +889,11 @@ input[type='submit'] {
         transform: skewX(25deg) translateX(5.5rem);
     }
 
+    > p {
+        margin: -1rem 0 2rem;
+        transform: skewX(25deg) translateX(9.75rem);
+    }
+
     .footer-partnerList {
         padding-left: 1.4rem;
     }
