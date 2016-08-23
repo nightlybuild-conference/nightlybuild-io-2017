@@ -9,8 +9,8 @@
                     <img class="logo" src="/img/logo-2016.svg" alt="Nightlybuild">
                 </a>
                 <ul class="navigation-list">
-                    <li>
-                        <a href="/#central-theme">Central Theme</a>
+                    <li <% if @page == 'schedule' : %>class="is-active"<% end %>>
+                        <a href="/schedule">Schedule</a>
                     </li>
                     <li <% if @page == 'speakers' : %>class="is-active"<% end %>>
                         <a href="/speakers">Speakers</a>
@@ -47,7 +47,28 @@
             <p><strong>Cologne, Germany.</strong> <a href="http://www.theaterhaus-koeln.de/
 ">Theaterhaus</a>. <span class="special-color"><strong>September, 2nd</strong> 2016</span>.</p>
 
-            <h3 class="rotate-left">A hand-crafted after work conference for web enthusiasts loving technology, design and inspiration in Cologne, Germany.</h3>
+            <% if @page != 'partners' : %>
+            <aside role="complementary">
+                <div class="top-partners">
+                    <h3>supported by</h3>
+                    <ul class="footer-partnerList">
+                        <li>
+                            <a href="/partner#rewe-digital">
+                                <img class="image" src="img/sponsors/rewe-digital-logo.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/partner#trivago">
+                                <img class="image" src="img/sponsors/trivago-logo.svg">
+                            </a>
+                        </li>
+                    </ul>
+                    <p>&hellip;<a href="/partners">and more</a>.</p>
+                </div>
+            </aside>
+            <% end %>
+
+            <h3 class="slogan">A hand-crafted after work conference for web enthusiasts loving technology, design and inspiration in Cologne, Germany.</h3>
         </header>
 
         <main class="main" role="main">
@@ -68,6 +89,11 @@
                     <li>
                         <a href="/partner#trivago">
                             <img class="image" src="img/sponsors/trivago-logo.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/partner#microsoft">
+                            <img class="image" src="img/sponsors/microsoft.svg">
                         </a>
                     </li>
                     <li>
