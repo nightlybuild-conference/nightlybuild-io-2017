@@ -932,6 +932,17 @@ input[type='submit'] {
     .footer-partnerList {
         padding-left: 1.4rem;
     }
+
+    @media (max-width: 32em) {
+        width: 100%;
+        padding-left: 1rem;
+
+        &,
+        & > *,
+        & > p {
+            transform: none;
+        }
+    }
 }
 
 .footer-partnerList {
