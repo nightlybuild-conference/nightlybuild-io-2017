@@ -1058,7 +1058,8 @@ input[type='submit'] {
     }
 }
 
-.atevent h3 {
+.atevent h3,
+.atevent_headline {
     display: inline-block;
     font-size: 2em;
     padding: 0.25em;
@@ -1066,12 +1067,14 @@ input[type='submit'] {
     color: #263238;
 }
 
-.atevent hr {
+.atevent hr,
+.atevent_divider {
     border-color: transparent;
     margin: 5em auto 1em;
 }
 
-.atevent .theme {
+.atevent .theme,
+.theme-atevent {
     margin-bottom: 0;
 }
 
