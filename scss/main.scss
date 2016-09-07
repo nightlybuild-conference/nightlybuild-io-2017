@@ -269,6 +269,10 @@ h2 {
     &:after {
         content: '.';
     }
+
+    &.no-dot:after {
+        content: none;
+    }
 }
 
 // Forms
@@ -774,6 +778,24 @@ input[type='submit'] {
 
     .image {
         max-height: 180px;
+    }
+
+    &-halve {
+        @media (max-width: 48em) {
+            display: block;
+        }
+
+        li {
+            max-width: 49%;
+
+            @media (max-width: 48em) {
+                max-width: 100%;
+                display: block;
+                overflow: visible;
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
     }
 }
 
