@@ -115,7 +115,7 @@ body {
     a:hover,
     a:focus {
         color: #263238;
-        text-decoration: underline;
+        border-bottom: 2px solid #263238;
     }
 }
 
@@ -262,7 +262,7 @@ input[type='submit'] {
 }
 
 h2 {
-    font-size: 6vw;
+    font-size: 5vw;
     letter-spacing: -0.05em;
     font-weight: bold;
 
@@ -294,7 +294,6 @@ input[type='submit'] {
 .header {
     width: 96vw;
     max-width: 100%;
-    min-height: 22em;
     margin: 5em auto 1em;
 }
 
@@ -305,27 +304,18 @@ input[type='submit'] {
 }
 
 .header h1 {
-    font-size: 7.5vw;
+    font-size: 6vw;
     margin: 0;
 }
 
 .header h1 + p,
 .header h3 {
-    font-size: 2vw;
+    font-size: 1.75vw;
 }
 
 @media (min-width: 45em) {
     .slogan {
-        position: absolute;
-        top: 25em;
-        left: 30em;
-        max-width: 100%;
-    }
-}
-
-@media (min-width: 65em) {
-    .slogan {
-        top: 14.25em;
+        max-width: 50rem;
     }
 }
 

@@ -24,6 +24,7 @@
     "mkdirp": "mkdir -p public/js public/img public/css",
     "build": "npm run mkdirp && npm run images && npm run scss && npm run js",
     "serve": "npm run mkdirp && npm run images && npm run build && npm run watch:nodejs & npm run watch:scss & npm run watch:js",
+    "start": "yarn serve",
     "watch:nodejs": "nodemon index.js",
     "watch:scss": "onchange '**/*.scss' -- npm run scss",
     "watch:js": "onchange 'js/**/*.js' -- npm run js"
