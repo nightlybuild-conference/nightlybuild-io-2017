@@ -9,7 +9,10 @@
                     <img class="logo" src="/img/logo-2016.svg" alt="Nightlybuild">
                 </a>
                 <ul class="navigation-list">
-                    <li <% if @page == 'schedule' : %>class="is-active"<% end %>>
+                    <li <% if @page == 'index' : %>class="is-active"<% end %>>
+                        <a href="/">NightlyBuild 2017</a>
+                    </li>
+                    <!--<li <% if @page == 'schedule' : %>class="is-active"<% end %>>
                         <a href="/schedule">Schedule</a>
                     </li>
                     <li <% if @page == 'speakers' : %>class="is-active"<% end %>>
@@ -17,22 +20,25 @@
                     </li>
                     <li <% if @page == 'partners' : %>class="is-active"<% end %>>
                         <a href="/partners">Partners</a>
-                    </li>
+                    </li>-->
                     <li <% if @page == 'location' : %>class="is-active"<% end %>>
                         <a href="/location">Location</a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="/atevent">At The Event</a>
-                    </li>
+                    </li>-->
                 </ul>
 
                 <div class="dropdown archive-dropdown">
                     <a class="dropdown-handle" href="#" title="Open/Close Archive">
                         <span class="dropdown-handleIcon"></span>
-                        <span class="dropdown-handleText">2016</span>
+                        <span class="dropdown-handleText">2017</span>
                     </a>
 
                     <ul class="dropdown-content">
+                        <li class="dropdown-listItem">
+                            <a href="https://2016.nightlybuild.io/">2016</a>
+                        </li>
                         <li class="dropdown-listItem">
                             <a href="https://2015.nightlybuild.io/">2015</a>
                         </li>
@@ -43,29 +49,26 @@
                 </div>
             </nav>
 
-            <h1>NightlyBuild <span class="special-color">2016</span>.</h1>
+            <h1>NightlyBuild <span class="special-color">2017</span>.</h1>
             <p><strong>Cologne, Germany.</strong> <a href="http://www.theaterhaus-koeln.de/
-">Theaterhaus</a>. <span class="special-color"><strong>September, 2nd</strong> 2016</span>.</p>
+">Theaterhaus</a>. <span class="special-color"><strong>September, 01st</strong> 2017</span>.</p>
 
             <% if @page != 'partners' : %>
+            <!--
             <aside role="complementary">
                 <div class="top-partners">
                     <h3>supported by</h3>
                     <ul class="footer-partnerList">
                         <li>
-                            <a href="/partner#rewe-digital">
-                                <img class="image" src="img/sponsors/rewe-digital-logo.svg">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/partner#trivago">
-                                <img class="image" src="img/sponsors/trivago-logo.svg">
+                            <a href="/partner#id">
+                                <img class="image" src="img/sponsors/image.svg">
                             </a>
                         </li>
                     </ul>
                     <p>&hellip;<a href="/partners">and more</a>.</p>
                 </div>
             </aside>
+            -->
             <% end %>
 
             <h3 class="slogan">A hand-crafted after work conference for web enthusiasts loving technology, design and inspiration in Cologne, Germany.</h3>
@@ -79,39 +82,15 @@
 
             <% if @page != 'partners' : %>
             <div class="footer-partner">
-                <h3>Thanks to our fantastic Partners</h3>
-                <ul class="footer-partnerList">
+                <h3>We are searching for Partners</h3>
+                <p>If you are interested in sponsoring the event, please <a href="mailto:sponsors@nightlybuild.io">contact us</a>.</p>
+                <!--<ul class="footer-partnerList">
                     <li>
-                        <a href="/partner#rewe-digital">
-                            <img class="image" src="img/sponsors/rewe-digital-logo.svg">
+                        <a href="/partner#id">
+                            <img class="image" src="img/sponsors/image.svg">
                         </a>
                     </li>
-                    <li>
-                        <a href="/partner#trivago">
-                            <img class="image" src="img/sponsors/trivago-logo.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/partner#microsoft">
-                            <img class="image" src="img/sponsors/microsoft.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/partner#contentful">
-                            <img class="image" src="img/sponsors/contentful-logo.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/partner#nexum">
-                            <img class="image" src="img/sponsors/nexum-logo.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/partner#michaelpage">
-                            <img class="image" src="img/sponsors/mp-logo.svg">
-                        </a>
-                    </li>
-                </ul>
+                </ul>-->
             </div>
             <% end %>
 
@@ -134,12 +113,6 @@
                         <a href="//helloanselm.com/" title="Website of Anselm Hannemann">
                             <img src="img/team/anselm.jpg" alt="Anselm Hannemann">
                             <p>Anselm Hannemann</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="//ixis.io/" title="Website of Andreas Klein">
-                            <img src="img/team/andy.jpg" alt="Andreas Klein">
-                            <p>Andreas Klein</p>
                         </a>
                     </li>
                     <li>
