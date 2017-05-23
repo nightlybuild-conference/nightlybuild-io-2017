@@ -1,7 +1,7 @@
 {
-  "name": "nightlybuild-io-2016",
+  "name": "nightlybuild-io-2017",
   "version": "0.1.0",
-  "description": "website of the Nightlybuild Conference 2016",
+  "description": "website of the Nightlybuild Conference 2017",
   "main": "index.js",
   "devDependencies": {
     "browserify": "^13.0.0",
@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:nightlybuild-conference/nightlybuild-io-2016.git"
+    "url": "git@github.com:nightlybuild-conference/nightlybuild-io-2017.git"
   },
   "keywords": [
     "None"
@@ -39,7 +39,7 @@
   "author": "The nightlybuilders",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nightlybuild-conference/nightlybuild-io-2016/issues"
+    "url": "https://github.com/nightlybuild-conference/nightlybuild-io-2017/issues"
   },
   "homepage": "https://nightlybuild.io/"
 }
