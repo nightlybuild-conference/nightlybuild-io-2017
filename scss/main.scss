@@ -342,23 +342,23 @@ input[type='submit'] {
     @media (min-width: 45em) {
         height: 40em;
     }
+}
 
-    .speaker-time {
-        right: 0;
-        line-height: 3.5;
-        padding: 0.75em 1.5em;
-        background-color: #e5dadc;
-        color: #263238;
+.speaker_time {
+    right: 0;
+    line-height: 3.5;
+    padding: 0.75em 1.5em;
+    background-color: #e5dadc;
+    color: #263238;
 
-        @media (min-width: 60em) {
-            position: absolute;
-            right: -4.5em;
-            line-height: inherit;
+    @media (min-width: 60em) {
+        position: absolute;
+        right: -4.5em;
+        line-height: inherit;
 
-            &.left {
-                left: -4.5em;
-                right: auto;
-            }
+        &.left {
+            left: -4.5em;
+            right: auto;
         }
     }
 }
@@ -523,7 +523,8 @@ input[type='submit'] {
     }
 }
 
-.text-image-overlay .links {
+.text-image-overlay .links,
+.links--fancy {
     list-style: none;
     padding: 0;
     font-size: 0.8em;
@@ -556,7 +557,8 @@ input[type='submit'] {
     }
 }
 
-.text-image-overlay.align-right .links {
+.text-image-overlay.align-right .links,
+.links--fancy {
     li:not(:first-child) {
         margin-right: 0.75em;
     }
@@ -564,6 +566,38 @@ input[type='submit'] {
     li:first-child {
         margin-right: 0;
     }
+}
+
+/**
+ * Speaker
+ */
+.speaker {
+    padding: 0 2rem 2rem;
+    margin: 0;
+    text-align: center;
+
+    @media (min-width: 40em) {
+        float: left;
+        width: 50%;
+    }
+
+    @media (min-width: 80em) {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+.speaker_image {
+    max-width: 17rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.speaker_title {
+    font-size: 3rem;
+    line-height: 1;
+    margin: 1rem 0 0;
 }
 
 .theme {
@@ -1141,4 +1175,14 @@ input[type='submit'] {
     h3 {
         margin-top: -0.15em;
     }
+}
+
+/**
+ * Clearfix
+ */
+.clearfix::after,
+.clearfix::before {
+    content: '';
+    display: table;
+    clear: both;
 }
