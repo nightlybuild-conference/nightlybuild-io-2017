@@ -572,9 +572,10 @@ input[type='submit'] {
  * Speaker
  */
 .speaker {
-    padding: 0 2rem 2rem;
+    padding: 1rem 2rem 2rem;
     margin: 0;
     text-align: center;
+    border-radius: 0.5rem;
 
     @media (min-width: 40em) {
         float: left;
@@ -585,6 +586,10 @@ input[type='submit'] {
         float: left;
         width: 33.33%;
     }
+}
+
+.speaker--light {
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .speaker_image {
