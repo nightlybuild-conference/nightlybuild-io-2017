@@ -766,6 +766,18 @@ input[type='submit'] {
     }
 }
 
+// Telekom Logo exception
+#qivicon img {
+    height: 100px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    @media (max-width: 45em) {
+        height: 165px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
 .partner-list,
 .friends-list {
     @media (max-width: 45em) {
