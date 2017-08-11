@@ -903,6 +903,19 @@ input[type='submit'] {
     }
 }
 
+// Telekom Logo exception
+.partner-list .image--qivicon {
+    height: 100px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    @media (max-width: 45em) {
+        height: 165px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
 // Footer
 .footer {
     text-align: center;
