@@ -1,5 +1,7 @@
 @import 'normalize';
 
+$background-color: #263238;
+
 *,
 *:before,
 *:after {
@@ -13,7 +15,7 @@ body {
 }
 
 html {
-    background-color: #263238;
+    background-color: $background-color;
     color: #e5dadc;
     font-family: 'Helvetica Neue', Helvetica, Geneva, sans-serif;
 }
@@ -68,7 +70,7 @@ body {
     left: 0;
     right: 0;
     background-color: #e5dadc;
-    color: #263238;
+    color: $background-color;
     text-align: center;
 
     @media (max-width: 45em) {
@@ -100,7 +102,7 @@ body {
     a:active {
         display: inline-block;
         padding: 0.25em;
-        color: #263238;
+        color: $background-color;
         text-decoration: none;
     }
 
@@ -114,8 +116,23 @@ body {
     li.is-active a,
     a:hover,
     a:focus {
-        color: #263238;
-        border-bottom: 2px solid #263238;
+        color: $background-color;
+        border-bottom: 2px solid $background-color;
+    }
+
+    a.button--in-nav {
+        display: inline-block;
+        transition: none;
+        padding: 0.75em 1em;
+        background-color: $background-color;
+        color: #e5dadc;
+        border-radius: 3px;
+    }
+
+    .button--in-nav:hover,
+    .button--in-nav:focus {
+        border-bottom: 0;
+        color: $background-color;
     }
 }
 
@@ -127,7 +144,7 @@ body {
     top: 0;
     right: 1rem;
     z-index: 110;
-    background: #263238;
+    background: $background-color;
     padding: 0.75rem;
     border-radius: 0 0 3px 3px;
 
@@ -145,7 +162,7 @@ body {
     text-decoration: none;
 
     .is-narrow & {
-        color: #263238;
+        color: $background-color;
     }
 }
 
@@ -166,10 +183,10 @@ body {
             0 0.5em 0 0 #e5dadc;
 
         .is-narrow & {
-            background: #263238;
+            background: $background-color;
             box-shadow:
-                0 0.25em 0 0 #263238,
-                0 0.5em 0 0 #263238;
+                0 0.25em 0 0 $background-color,
+                0 0.5em 0 0 $background-color;
         }
     }
 }
@@ -202,7 +219,7 @@ body {
         text-decoration: none;
 
         .is-narrow & {
-            color: #263238;
+            color: $background-color;
         }
 
         &:hover,
@@ -248,7 +265,7 @@ input[type='submit'] {
     font-weight: bold;
     text-decoration: none;
     background-color: #7DCFB6;
-    color: #263238;
+    color: $background-color;
     transition: all 125ms ease-in-out;
 
     &[disabled] {
@@ -278,7 +295,7 @@ h2 {
 // Forms
 input[type='text'],
 input[type='email'] {
-    color: #263238;
+    color: $background-color;
     border: 0;
     padding: 0.75em 1em;
     text-align: center;
@@ -349,7 +366,7 @@ input[type='submit'] {
     line-height: 3.5;
     padding: 0.75em 1.5em;
     background-color: #e5dadc;
-    color: #263238;
+    color: $background-color;
 
     @media (min-width: 60em) {
         position: absolute;
@@ -401,7 +418,7 @@ input[type='submit'] {
 .text-image-overlay.color-inverse a,
 .text-image-overlay.color-inverse li,
 .text-image-overlay .color-inverse {
-    color: #263238;
+    color: $background-color;
 }
 
 .mobile-contrast.color-inverse {
@@ -605,6 +622,12 @@ input[type='submit'] {
     margin: 1rem 0 0;
 }
 
+.speaker_subtitle {
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-top: 0;
+}
+
 .theme {
     margin-bottom: 3rem;
     width: 60em;
@@ -778,7 +801,7 @@ input[type='submit'] {
         text-decoration: none;
         padding: 1.5rem;
         background-color: #fff;
-        color: #263238;
+        color: $background-color;
     }
 
     .text {
@@ -886,6 +909,19 @@ input[type='submit'] {
     }
 }
 
+// Telekom Logo exception
+.partner-list .image--qivicon {
+    height: 100px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    @media (max-width: 45em) {
+        height: 165px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
 // Footer
 .footer {
     text-align: center;
@@ -962,7 +998,7 @@ input[type='submit'] {
     p,
     a,
     li {
-        color: #263238;
+        color: $background-color;
     }
 }
 
@@ -1124,7 +1160,7 @@ input[type='submit'] {
     font-size: 2em;
     padding: 0.25em;
     background-color: #e5dadc;
-    color: #263238;
+    color: $background-color;
 }
 
 .atevent hr,
