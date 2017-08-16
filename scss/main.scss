@@ -922,6 +922,17 @@ input[type='submit'] {
     }
 }
 
+// Rheinwerk Logo exception
+.friends-list .image--rheinwerk {
+    margin-top: 45px;
+    margin-bottom: 45px;
+
+    @media (max-width: 45em) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
 // Footer
 .footer {
     text-align: center;
