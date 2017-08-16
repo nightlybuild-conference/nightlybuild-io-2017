@@ -922,6 +922,19 @@ input[type='submit'] {
     }
 }
 
+// Invers Logo exception
+.partner-list .image--invers {
+    height: 58px;
+    margin-top: 53px;
+    margin-bottom: 54px;
+
+    @media (max-width: 45em) {
+        height: 165px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
 // Footer
 .footer {
     text-align: center;
