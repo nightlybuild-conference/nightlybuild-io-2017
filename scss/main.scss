@@ -622,6 +622,12 @@ input[type='submit'] {
     margin: 1rem 0 0;
 }
 
+.speaker_subtitle {
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-top: 0;
+}
+
 .theme {
     margin-bottom: 3rem;
     width: 60em;
@@ -916,6 +922,30 @@ input[type='submit'] {
     }
 }
 
+// Invers Logo exception
+.partner-list .image--invers {
+    height: 58px;
+    margin-top: 53px;
+    margin-bottom: 54px;
+
+    @media (max-width: 45em) {
+        height: 165px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+// Rheinwerk Logo exception
+.friends-list .image--rheinwerk {
+    margin-top: 45px;
+    margin-bottom: 45px;
+
+    @media (max-width: 45em) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
 // Footer
 .footer {
     text-align: center;
@@ -999,7 +1029,7 @@ input[type='submit'] {
 .top-partners {
     position: relative;
     display: inline-block;
-    width: 30em;
+    width: 35em;
     padding: 1rem 0 0 0;
     margin-bottom: 0;
     transform: skewX(-25deg) translateX(-5rem);
