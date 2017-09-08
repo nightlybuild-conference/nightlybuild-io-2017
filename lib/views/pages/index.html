@@ -1,5 +1,9 @@
 <% extend 'lib/views/layouts/default' %>
 
+<% if @page == 'index' : %>
+    <% include 'lib/views/blocks/layout/_thanks' %>
+<% end %>
+
 <section class="layout-section" id="central-theme">
     <article class="article">
 
