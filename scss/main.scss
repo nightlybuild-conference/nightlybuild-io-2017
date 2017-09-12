@@ -816,45 +816,16 @@ input[type='submit'] {
 
 .image-list {
     li {
-        overflow: hidden;
         display: flex;
-        max-width: 32%;
-        margin-right: 2%;
+        flex-basis: 100%;
 
-        &:last-child {
-            margin-right: 0;
-        }
-    }
+        a {
+            display: flex;
+            flex-basis: 100%;
 
-    .link {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, 0) scale(1);
-
-        &:hover,
-        &focus {
-            transform: translate(-50%, 0) scale(1.02);
-        }
-    }
-
-    .image {
-        max-height: 180px;
-    }
-
-    &-halve {
-        @media (max-width: 48em) {
-            display: block;
-        }
-
-        li {
-            max-width: 49%;
-
-            @media (max-width: 48em) {
-                max-width: 100%;
-                display: block;
-                overflow: visible;
-                margin-right: 0;
-                margin-bottom: 1rem;
+            img {
+                width: 100%;
+                height: auto;
             }
         }
     }
